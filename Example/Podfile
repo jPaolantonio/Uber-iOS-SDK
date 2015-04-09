@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'Uber-iOS-SDK', :exclusive => true do
+  pod 'Uber-iOS-SDK', :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod 'Uber-iOS-SDK', :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end

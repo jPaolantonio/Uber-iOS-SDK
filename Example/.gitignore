@@ -1,0 +1,36 @@
+#####
+# OS X temporary files that should never be committed
+
+.DS_Store
+*.swp
+*.lock
+profile
+
+####
+# Xcode build files
+#
+DerivedData/
+build/
+
+####
+# Cocoapods directory, generated from pod command
+#
+
+Pods/
+!Podfile.lock
+
+####
+# Xcode project files
+#
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xccheckout
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+
+xcuserdata
+!xcshareddata
