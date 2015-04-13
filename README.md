@@ -1,6 +1,6 @@
 # Uber-iOS-SDK
 
-[![CI Status](http://img.shields.io/travis/jaolantonio/Uber-iOS-SDK.svg?style=flat)](https://travis-ci.org/jPaolantonio/Uber-iOS-SDK)
+[![CI Status](http://img.shields.io/travis/jPaolantonio/Uber-iOS-SDK.svg?style=flat)](https://travis-ci.org/jPaolantonio/Uber-iOS-SDK)
 [![Version](https://img.shields.io/cocoapods/v/Uber-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/Uber-iOS-SDK)
 [![License](https://img.shields.io/cocoapods/l/Uber-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/Uber-iOS-SDK)
 [![Platform](https://img.shields.io/cocoapods/p/Uber-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/Uber-iOS-SDK)
@@ -19,7 +19,6 @@ To get started started using Uber-iOS-SDK, you only need a few lines of code. He
 
 ```objc
 [[UBUberAPI shared] setServerToken:@""]; //Set your token here.
-
 [[UBUberAPI shared] getProductsFromLatitude:40.7127
                                   longitude:-74.0059
                                    response:^(NSArray *products, NSError *error) {
@@ -30,12 +29,15 @@ To get started started using Uber-iOS-SDK, you only need a few lines of code. He
 To get details on a product
 
 ```objc
-[[UBUberAPI shared] getProductWithId:productId response:^(UBProduct *product, NSError *error) {
+[[UBUberAPI shared] getProductWithId:productId
+                            response:^(UBProduct *product, NSError *error) {
 
 }];
 ```
 
-There is also a sample project in the `Example` director.
+There is also a sample project in the `Example` directory.
+
+Docs are available on [CocoaDocs](http://cocoadocs.org/docsets/Uber-iOS-SDK/0.1.0/).
 
 ## Goals
 
